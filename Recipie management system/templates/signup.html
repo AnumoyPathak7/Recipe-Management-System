@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="/submit" method="post">
+            <div>
+                <label>User Name:</label>
+                <br>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label>E-mail:</label>
+                <br>
+                <input type="email" id="E-mail" name="E-mail" required>
+            </div>
+            <br> 
+            <div>
+                <label>Gender:</label>
+                <br>
+                <input type="radio" id="gender" name="gender" value="Male" required>
+                <label>Male</label><br>
+                <input type="radio" id="gender" name="gender" value="Female" required>
+                <label>Female</label><br>
+                <input type="radio" id="gender" name="gender" value="NA" required>
+                <label>Prefer not to say</label>
+            </div>
+            <br>
+            <div>
+                <label>Password:</label>
+                <br>
+                <input type="password" id="pass" name="pass" required>
+            </div>
+            <br>
+            <input type="submit" value="Sign Up"><a href="loginsignup.html"></a>
+        </form>
+        <br>
+        <br>
+        <button type="button" id="signup" name="signup"><a href="loginsignup.html">Sign In</a></button>
+    </div>
+    
+   
+</body>
+</html>
